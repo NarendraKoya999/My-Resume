@@ -1,0 +1,124 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #000;
+}
+
+.title {
+    margin: 5px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #666;
+}
+
+#contact {
+    margin-top: 10px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Space between the links */
+}
+
+#contact p {
+    margin: 0;
+}
+
+#contact a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd; /* Bottom underline for each section */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Bold content for spans in the skills section */
+section ul li span {
+    font-weight: bold;
+}
+
+/* Layout Styles */
+#mainLeft, #mainRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#mainLeft {
+    padding-right: 20px;
+}
+
+#mainRight {
+    padding-left: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #mainLeft, #mainRight {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #mainLeft, #mainRight {
+        padding-top: 20px;
+    }
+}
